@@ -5,7 +5,7 @@
 */
 {
   // Name your instance!
-  "title": "Etherpad",
+  "title": "Noransoft's etherpad",
 
   // favicon default name
   // alternatively, set up a fully specified Url to your own favicon
@@ -49,7 +49,7 @@
   */
 
   //the default text of a pad
-  "defaultPadText" : "Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at http:\/\/etherpad.org\n",
+  "defaultPadText" : "Welcome to Noransoft's implementation of Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!",
 
   /* Default Pad behavior, users can override by changing */
   "padOptions": {
@@ -67,7 +67,7 @@
   },
 
   /* Shoud we suppress errors from being visible in the default Pad Text? */
-  "suppressErrorsInPadText" : false,
+  "suppressErrorsInPadText" : true,
 
   /* Users must have a session to access pads. This effectively allows only group pads to be accessed. */
   "requireSession" : false,
@@ -99,31 +99,29 @@
 
   /* This setting is used if you require authentication of all users.
      Note: /admin always requires authentication. */
-  "requireAuthentication" : false,
+  "requireAuthentication" : true,
 
   /* Require authorization by a module, or a user with is_admin set, see below. */
   "requireAuthorization" : false,
 
   /*when you use NginX or another proxy/ load-balancer set this to true*/
-  "trustProxy" : false,
+  "trustProxy" : true,
 
   /* Privacy: disable IP logging */
   "disableIPlogging" : false,
 
   /* Users for basic authentication. is_admin = true gives access to /admin.
      If you do not uncomment this, /admin will not be available! */
-  /*
   "users": {
     "admin": {
       "password": "changeme1",
       "is_admin": true
     },
     "user": {
-      "password": "changeme1",
+      "password": "changeme2",
       "is_admin": false
     }
   },
-  */
 
   // restrict socket.io transport methods
   "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
